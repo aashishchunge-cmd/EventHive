@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>EventHive - Events</title>
+
+    <link
+        rel="stylesheet"
+        href="css/events.css"
+    >
+
+</head>
+
+<body>
+
+
+    <!-- =================================
+         NAVIGATION
+    ================================== -->
+
+    <nav class="events-navbar">
+
+        <div class="nav-brand">
+            📅 EventHive
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="dashboard.html">
+                📊 Dashboard
+            </a>
+
+
+            <a
+                href="events.html"
+                class="active"
+            >
+                📅 Events
+            </a>
+
+
+            <span
+                id="userEmail"
+                class="user-email"
+            >
+                User
+            </span>
+
+
+            <button id="logoutBtn">
+                🚪 Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =================================
+         MAIN
+    ================================== -->
+
+    <main class="events-main">
+
+
+        <div class="events-header">
+
+            <div>
+
+                <span>
+                    EVENT MANAGEMENT
+                </span>
+
+                <h1>
+                    My Events
+                </h1>
+
+                <p>
+                    Create and manage your local events.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================
+             CREATE EVENT
+        ================================== -->
+
+        <section class="event-form-card">
+
+            <h2>
+                ➕ Create New Event
+            </h2>
+
+            <p class="form-description">
+                Add your event details below.
+            </p>
+
+
+            <form id="eventForm">
+
+                <div class="form-group">
+
+                    <label for="eventName">
+                        Event Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="eventName"
+                        placeholder="Enter event name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="eventDetails">
+                        Event Details
+                    </label>
+
+                    <textarea
+                        id="eventDetails"
+                        placeholder="Enter event details"
+                        rows="5"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    id="saveBtn"
+                    class="save-btn"
+                >
+                    ➕ Create Event
+                </button>
+
+            </form>
+
+
+            <p
+                id="message"
+                class="message"
+            ></p>
+
+        </section>
+
+
+        <!-- =================================
+             EVENTS LIST
+        ================================== -->
+
+        <section class="events-list-card">
+
+            <div class="list-heading">
+
+                <div>
+
+                    <h2>
+                        📅 Event List
+                    </h2>
+
+                    <p>
+                        Your saved events
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="eventsList"
+                class="events-list"
+            >
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="js/supabase.js"></script>
+
+    <script src="js/events.js"></script>
+
+</body>
+
+</html>

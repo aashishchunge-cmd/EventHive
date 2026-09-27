@@ -1,0 +1,441 @@
+/* =========================================
+   EVENTHIVE DARK BLUE HOME
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f3f7fc;
+
+    color: #172554;
+
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+
+    height: 76px;
+
+    background: #0b1f3a;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    color: white;
+
+    box-shadow:
+        0 4px 20px
+        rgba(7, 25, 55, 0.18);
+}
+
+
+.nav-logo {
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    letter-spacing: 0.3px;
+}
+
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.nav-links a {
+
+    color: #dbeafe;
+
+    text-decoration: none;
+
+    padding: 10px 16px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+
+.nav-links a:hover {
+
+    background: #17365f;
+
+    color: white;
+}
+
+
+.nav-links a.active {
+
+    background: #2563eb;
+
+    color: white;
+}
+
+
+.nav-links .nav-signup {
+
+    background: #2563eb;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+
+.nav-links .nav-signup:hover {
+
+    background: #1d4ed8;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+
+    min-height:
+        calc(100vh - 76px);
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 50px 7%;
+}
+
+
+.hero-content {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1.2fr 0.8fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+/* =========================================
+   HERO TEXT
+========================================= */
+
+.small-title {
+
+    color: #2563eb;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    font-size: 13px;
+
+    margin-bottom: 18px;
+}
+
+
+.hero-text h1 {
+
+    font-size: 58px;
+
+    line-height: 1.05;
+
+    color: #0f172a;
+
+    margin-bottom: 25px;
+}
+
+
+.hero-text h1 span {
+
+    color: #2563eb;
+}
+
+
+.hero-text p {
+
+    max-width: 650px;
+
+    color: #64748b;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 15px;
+}
+
+
+.primary-btn,
+.secondary-btn {
+
+    padding: 14px 25px;
+
+    border-radius: 9px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    font-weight: bold;
+}
+
+
+.primary-btn {
+
+    border: none;
+
+    background: #2563eb;
+
+    color: white;
+}
+
+
+.primary-btn:hover {
+
+    background: #1d4ed8;
+
+    transform:
+        translateY(-2px);
+}
+
+
+.secondary-btn {
+
+    background: white;
+
+    color: #172554;
+
+    border:
+        1px solid #cbd5e1;
+}
+
+
+.secondary-btn:hover {
+
+    border-color: #2563eb;
+
+    color: #2563eb;
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* =========================================
+   HERO CARD
+========================================= */
+
+.hero-card {
+
+    background: white;
+
+    padding: 38px;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 20px 50px
+        rgba(15, 35, 70, 0.12);
+
+    border:
+        1px solid #e2e8f0;
+}
+
+
+.hero-icon {
+
+    width: 70px;
+
+    height: 70px;
+
+    background: #dbeafe;
+
+    border-radius: 17px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 34px;
+
+    margin-bottom: 25px;
+}
+
+
+.hero-card h2 {
+
+    color: #0f172a;
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+
+.hero-card p {
+
+    color: #64748b;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+
+.hero-stats {
+
+    display: flex;
+
+    gap: 55px;
+
+    border-top:
+        1px solid #e2e8f0;
+
+    padding-top: 25px;
+}
+
+
+.hero-stats div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+
+.hero-stats strong {
+
+    font-size: 23px;
+
+    color: #2563eb;
+}
+
+
+.hero-stats span {
+
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 850px) {
+
+    .hero-content {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .hero-text h1 {
+
+        font-size: 44px;
+
+    }
+
+
+    .hero-card {
+
+        max-width: 550px;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+
+        padding: 0 20px;
+
+    }
+
+
+    .nav-links {
+
+        gap: 2px;
+
+    }
+
+
+    .nav-links a {
+
+        padding: 8px;
+
+    }
+
+
+    .hero {
+
+        padding: 35px 20px;
+
+    }
+
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+    }
+
+}

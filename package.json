@@ -1,0 +1,15 @@
+{
+  "name": "eventhive",
+  "version": "1.0.0",
+  "description": "EventHive - Local Event & RSVP Manager",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Aashish Chunge",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.0.0",
+    "electron": "^38.0.0"
+  }
+}

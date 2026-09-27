@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>EventHive - Dashboard</title>
+
+    <link
+        rel="stylesheet"
+        href="css/dashboard.css"
+    >
+
+</head>
+
+<body>
+
+
+    <!-- =================================
+         TOP NAVIGATION
+    ================================== -->
+
+    <nav class="dashboard-navbar">
+
+        <div class="nav-brand">
+            📅 EventHive
+        </div>
+
+
+        <div class="dashboard-nav-links">
+
+            <a
+                href="dashboard.html"
+                class="active"
+            >
+                📊 Dashboard
+            </a>
+
+
+            <a href="events.html">
+                📅 Events
+            </a>
+
+
+            <span
+                id="userEmail"
+                class="nav-user"
+            >
+                User
+            </span>
+
+
+            <button id="logoutBtn">
+                🚪 Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =================================
+         MAIN CONTENT
+    ================================== -->
+
+    <main class="dashboard-main">
+
+
+        <!-- HEADER -->
+
+        <section class="dashboard-header">
+
+            <div>
+
+                <span class="page-label">
+                    EVENT MANAGEMENT
+                </span>
+
+                <h1>
+                    Dashboard
+                </h1>
+
+                <p>
+                    Welcome back! Here's what's
+                    happening with your events.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             STAT CARDS
+        ================================== -->
+
+        <section class="stats-grid">
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    📅
+                </div>
+
+                <div>
+
+                    <h3 id="totalEvents">
+                        0
+                    </h3>
+
+                    <p>
+                        Total Events
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    📝
+                </div>
+
+                <div>
+
+                    <h3 id="recentCount">
+                        0
+                    </h3>
+
+                    <p>
+                        Recent Events
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    ⚡
+                </div>
+
+                <div>
+
+                    <h3>
+                        Active
+                    </h3>
+
+                    <p>
+                        Event Manager
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             MANAGE EVENTS
+        ================================== -->
+
+        <section class="manage-card">
+
+            <div>
+
+                <span class="manage-small">
+                    EVENTHIVE
+                </span>
+
+                <h2>
+                    Manage Your Events
+                </h2>
+
+                <p>
+                    Create, view, update and delete
+                    your local events from one place.
+                </p>
+
+            </div>
+
+
+            <a
+                href="events.html"
+                class="manage-button"
+            >
+                📅 Manage Events
+            </a>
+
+        </section>
+
+
+        <!-- =================================
+             RECENT EVENTS
+        ================================== -->
+
+        <section class="recent-card">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <h2>
+                        Recent Events
+                    </h2>
+
+                    <p>
+                        Your latest created events
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="events.html"
+                    class="view-all"
+                >
+                    View All →
+                </a>
+
+            </div>
+
+
+            <div
+                id="recentEvents"
+                class="recent-events"
+            >
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="js/supabase.js"></script>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

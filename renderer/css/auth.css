@@ -1,0 +1,260 @@
+/* =========================================
+   EVENTHIVE AUTH - DARK BLUE
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f3f7fc;
+
+    color: #172554;
+
+    min-height: 100vh;
+}
+
+
+.auth-container {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 25px;
+}
+
+
+.auth-card {
+
+    width: 430px;
+
+    background: white;
+
+    padding: 42px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 55px
+        rgba(15, 35, 70, 0.13);
+
+    border:
+        1px solid #e2e8f0;
+
+    text-align: center;
+}
+
+
+.auth-logo {
+
+    width: 70px;
+
+    height: 70px;
+
+    margin:
+        0 auto 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #dbeafe;
+
+    border-radius: 17px;
+
+    font-size: 34px;
+}
+
+
+.auth-card h1 {
+
+    color: #0b1f3a;
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+}
+
+
+.auth-subtitle {
+
+    color: #64748b;
+
+    margin-bottom: 30px;
+}
+
+
+.input-group {
+
+    text-align: left;
+
+    margin-bottom: 18px;
+}
+
+
+.input-group label {
+
+    display: block;
+
+    color: #172554;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    margin-bottom: 8px;
+}
+
+
+.input-group input {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border:
+        1px solid #cbd5e1;
+
+    border-radius: 9px;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+.input-group input:focus {
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(37, 99, 235, 0.12);
+}
+
+
+.auth-btn {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.auth-btn:hover {
+
+    background: #1d4ed8;
+
+    transform:
+        translateY(-2px);
+}
+
+
+.auth-btn:disabled {
+
+    background: #94a3b8;
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+
+.message {
+
+    margin-top: 15px;
+
+    min-height: 20px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+.auth-footer {
+
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top:
+        1px solid #e2e8f0;
+}
+
+
+.auth-footer p {
+
+    color: #64748b;
+
+    font-size: 14px;
+
+    margin-bottom: 7px;
+}
+
+
+.auth-footer a {
+
+    color: #2563eb;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+.auth-footer a:hover {
+
+    text-decoration: underline;
+}
+
+
+.back-home {
+
+    display: inline-block;
+
+    margin-top: 20px;
+
+    color: #64748b;
+
+    text-decoration: none;
+
+    font-size: 13px;
+}
+
+
+.back-home:hover {
+
+    color: #2563eb;
+}
